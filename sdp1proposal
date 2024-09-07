@@ -1,0 +1,15 @@
+A description of your project:
+a) What purpose does it serve (artistic, functional, exploratory, entertainment, etc.)?
+b) How will users interface with it?
+
+  //The response covers both A and B.
+
+  My project will be a classic Magic 8 Ball simulation, with the typical 8-ball feature of receiving random, fortune-teller-like responses. Quirky features include allowing the user to change the question manually and allowing the model to generate more responses by simply replicating case lines of code. Once done, the typical user will simply press run after inputting said player's name as well as their desired question in quotations. Once the code is run, the program will generate a random number between 1 and 9 (could modify to be a higher number), after of which it will select the response that correlates to that number. It will then print that response to the console to allow the user to see the answer to their question; despite the simple design, the tool is semi-complex such that it allows the tool to be quite entertaining for users while also allowing for any simple modifications (see above) to be made by the coder. 
+  
+The language, libraries, and any other tools you will use.
+
+  I will use Codecademy to continue learning how to code in Swift and apply certain variables, constants, and definitions skillfully. I will use text editors in GitHub to write the code, and this code hopefully will be able to be copy adn pasted such that it could be transferred to any other software for manipulation or other functional purposes.
+    
+What will a successful project look like?
+
+    For me, a successful project will involve a fully functional Magic 8-Ball simulation that not only serves its functions but also is easy to modify, fix if any bugs pop up, and is practically expandable. I want the simulation to be as simple as possible to avoid any necessary steps and to also improve my coding skills to make them more precise/concise overall. I'd also like to take these newfound (or at least more improved, rather) skills and apply them to future projects.
