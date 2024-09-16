@@ -1,0 +1,31 @@
+let playerName = "Alex"
+let playerQuestion = "Is my favorite person Kylan?"
+let randomNumber = Int.random(in: 1...9)
+var nineBall: String = "Hello"
+print("The number that I have chosen (from 1 to 9) is \(randomNumber).")
+
+switch randomNumber {
+  case 1:
+    nineBall = "Yes - definitely."
+  case 2:
+    nineBall = "It is decidedly so."
+  case 3:
+    nineBall = "Without a doubt."
+  case 4:
+    nineBall = "Reply hazy, try again."
+  case 5:
+    nineBall = "Ask again later."
+  case 6:
+    nineBall = "Better not tell you now."
+  case 7:
+    nineBall = "My sources say no."
+  case 8:
+    nineBall = "Outlook not so good."
+  case 9:
+    nineBall = "Very doubtful."
+  default:
+    break
+}
+
+print("\(playerName) asks: \(playerQuestion)")
+print("\(nineBall)")
