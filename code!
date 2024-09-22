@@ -66,8 +66,6 @@ var certaintyLevel: String {
 
 print("Certainty level: \(certaintyLevel)")
 
-print("Certainty level: \(certaintyLevel)")
-
 // Store the current question and answer
 lastQuestion = playerQuestion
 lastAnswer = nineBall
