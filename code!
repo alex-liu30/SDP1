@@ -1,31 +1,77 @@
+import Foundation
+
 let playerName = "Alex"
 let playerQuestion = "Is my favorite person Kylan?"
 let randomNumber = Int.random(in: 1...9)
 var nineBall: String = "Hello"
+
+// New feature: Last asked question and answer
+var lastQuestion = ""
+var lastAnswer = ""
+
+// Function to recall last question
+func recallLastQuestion() {
+    if lastQuestion.isEmpty {
+        print("No previous question asked.")
+    } else {
+        print("Last question: \(lastQuestion)")
+        print("Last answer: \(lastAnswer)")
+    }
+}
+
 print("The number that I have chosen (from 1 to 9) is \(randomNumber).")
 
 switch randomNumber {
-  case 1:
-    nineBall = "Yes - definitely."
-  case 2:
-    nineBall = "It is decidedly so."
-  case 3:
-    nineBall = "Without a doubt."
-  case 4:
-    nineBall = "Reply hazy, try again."
-  case 5:
-    nineBall = "Ask again later."
-  case 6:
-    nineBall = "Better not tell you now."
-  case 7:
-    nineBall = "My sources say no."
-  case 8:
-    nineBall = "Outlook not so good."
-  case 9:
-    nineBall = "Very doubtful."
-  default:
-    break
+ case 1:
+   nineBall = "Yes - definitely."
+ case 2:
+   nineBall = "It is decidedly so."
+ case 3:
+   nineBall = "Without a doubt."
+ case 4:
+   nineBall = "Reply hazy, try again."
+ case 5:
+   nineBall = "Ask again later."
+ case 6:
+   nineBall = "Better not tell you now."
+ case 7:
+   nineBall = "My sources say no."
+ case 8:
+   nineBall = "Outlook not so good."
+ case 9:
+   nineBall = "Very doubtful."
+ default:
+   break
+}
+
+// New feature: Custom responses based on question content
+if playerQuestion.lowercased().contains("favorite") {
+    nineBall += " Favorites can change over time!"
+} else if playerQuestion.lowercased().contains("person") {
+    nineBall += " People are complex."
 }
 
 print("\(playerName) asks: \(playerQuestion)")
 print("\(nineBall)")
+
+// New feature: Certainty level
+var certaintyLevel: String {
+    switch randomNumber {
+    case 1, 2, 3: return "High certainty"
+    case 4, 5, 6: return "Medium certainty"
+    case 7, 8, 9: return "Low certainty"
+    default: return "Unknown certainty"
+    }
+}
+
+print("Certainty level: \(certaintyLevel)")
+
+print("Certainty level: \(certaintyLevel)")
+
+// Store the current question and answer
+lastQuestion = playerQuestion
+lastAnswer = nineBall
+
+// Call the function to recall the last question
+print("\nRecalling last question:")
+recallLastQuestion()
