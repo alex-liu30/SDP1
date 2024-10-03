@@ -1,5 +1,3 @@
-import Foundation
-
 let playerName = "Alex"
 let playerQuestion = "Is my favorite person Kylan?"
 let randomNumber = Int.random(in: 1...9)
